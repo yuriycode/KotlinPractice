@@ -1,0 +1,4 @@
+package topics
+
+class Lambda {
+}
