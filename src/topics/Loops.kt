@@ -1,33 +1,40 @@
 package topics
 
-fun main(){
-    //for each
-    val items = listOf ("apple", "banana", "orange") // List.of Java 9
-    //mutableOf ("apple", "banana", "orange") список, який можемо змінювати
+fun main() {
+    val items = listOf("car", "plane", "bike") //list.of Java 9
+    //mutableListOf - можливо щось змінити в списку
 
     for (item in items)
         println(item)
 
-   //While
-
+    // while
     var index = 0
-    while(index < items.size) {
-        println("Item at $index is ${items[index]}")
-    index++
+    while (index < items.size) {
+        println("Items at $index ${items[index]}")
+        index++
+
+    }
+
+    //Діапазони(є також в Python)
+    println(5 in 3..10) //true
+    println(7 in 3..6) //false
+
+    for (i in 1..10)
+        println(i)
+
+    for (i in 10 downTo 1)
+        println(i)
+
+
+
 }
 
-    // Диапазоны (є в Python)
-   print (7 in 5..10) // true
-   print(5 in 6..20) // false
 
-    for (i in 25..100) // виводиться повністю
-    println(i)
-    for (i in 25 until 35) // виводиться до 34
-        println(i)
 
-    for (i in 25 downTo 1) // в зворотньому напрямку
-        println(i)
 
-    for (i in 100..1000 step 100) // тут вираховуємо в сотнях
-        println(i)
-}
+
+
+
+
+
+
